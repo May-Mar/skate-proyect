@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="js/Category.js"></script>
+    <script type="text/javascript" src="js/Client.js"></script>
+    <script type="text/javascript" src="js/Message.js"></script>
+    <script type="text/javascript" src="js/Reservation.js"></script>
+    <script type="text/javascript" src="js/Skate.js"></script>
+
+    <title>MAYRA MARTINEZ</title>
+    <style type="text/css">
+  body {
+    color: rgb(43, 4, 4);
+    background-color: #F0FFF0 }
+
+    </style>
+
+</head> 
+<body>
+   <center>
+    <h1 style="color:rgb(255, 0, 30);">Skate Rental</h1>
+    <img src="img/patineta.jpeg" width="150" height="100">
+    <div>
+        <h1 style="font-family:courier;">Category</h1>
+
+        <input type="text" id="nameCategory" placeholder="Name Category">
+        <input type="text" id="descripcionCategory" placeholder="Descripcion Category">
+        <br>
+        <br>
+        <button onclick="traerInformacionCategory()">Consult</button>
+        <button onclick="guardarInformacionCategory()">Save</button>
+       
+    </div> 
+    <br>
+    
+    <div id="resultadoCategory">&#128512;</div> 
+                              
+    
+    <div>
+        <h1 style="font-family:courier;">Skate</h1>
+        
+        <input type="text" id="brandSkate" placeholder="Brand Skate">
+        <input type="number" id="yearSkate" placeholder="Year Skate">
+        <input type="text" id="nameSkate" placeholder="Name Skate">
+        <input type="text" id="descripcionSkate" placeholder="Descripcion Skate">
+        <input type="number" id="category" placeholder="Id Category">
+        <br>  
+        <br>
+        <button onclick="traerInformacionSkate()">Consult</button>
+        <button onclick="agregarInformacionSkate()">Save</button>
+       
+    </div>
+    <br>
+    <div id="resultadoSkate">&#128563;</div>
+
+    <div>
+        <h1 style="font-family:courier;">Client</h1>
+        
+        <input type="text" id="emailClient" placeholder="Email Client">
+        <input type="text" id="passwordClient" placeholder="Password Client">
+        <input type="text" id="nameClient" placeholder="Name Client">
+        <input type="number" id="ageClient" placeholder="Age Client">
+        <br>  
+        <br>
+        
+        <button onclick="traerInformacionClient()">Consult</button>
+        <button onclick="guardarInformacionClient()">Save</button>
+       
+    </div>
+    <br>
+    <div id="resultadoClient">&#128540;</div>
+
+    <div>
+        <h1 style="font-family:courier;">Message</h1>
+        
+        <input type="text" id="messageText" placeholder="MessageText">
+        <input type="number" id="idSkateM" placeholder="Id Skate">
+        <input type="number" id="idClientM" placeholder="Id Client">
+        <br>  
+        <br>
+        <button onclick="traerInformacionMessage()">Consult</button>
+        <button onclick="guardarInformacionMessage()">Save</button>
+       
+    </div>
+    <br>
+    <div id="resultadoMessage">&#128590;</div>
+
+    <div>
+        <h1 style="font-family:courier;">Reservation</h1>
+        
+        <input type="date" id="startDate" placeholder="StartDate">
+        <input type="date" id="endDate" placeholder="EndData">
+        <input type="number" id="idClientR" placeholder="Id Client">
+        <input type="number" id="idSkateR" placeholder="Id Skate">
+        <br>  
+        <br>
+        <button onclick="traerInformacionReservation()">Consultr</button>
+        <button onclick="guardarInformacionReservation()">Save</button>
+       
+    </div>
+    <br>
+    <div id="resultadoReservation">&#128570;</div>
+
+    <div>
+        <button onclick="consultarTopClients()">Top Clients</button>
+    </div>
+    <br>
+    <div id="resultadoTopClients"></div>
+</center> 
+</body>   
+</html>
